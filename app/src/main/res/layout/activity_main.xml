@@ -6,105 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <Button
-        android:id="@+id/paguinaWeb"
+        android:id="@+id/iniciar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Abrir github"
-        app:layout_constraintBottom_toTopOf="@id/correo"
+        android:text="iniciar"
+        android:onClick="inciar"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:onClick="abrirGithub"
-        >
+        app:layout_constraintBottom_toBottomOf="parent">
     </Button>
-
-    <Button
-        android:id="@+id/correo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mandar correo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/paguinaWeb"
-        app:layout_constraintBottom_toTopOf="@id/llamada"
-        android:onClick="mandarCorreo"
-        >
-    </Button>
-
-    <Button
-        android:id="@+id/llamada"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Llamada"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/correo"
-        app:layout_constraintBottom_toTopOf="@id/mensaje"
-        android:onClick="realizarLlamada"
-        >
-    </Button>
-
-    <Button
-        android:id="@+id/mensaje"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mandar mensaje"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/llamada"
-        app:layout_constraintBottom_toTopOf="@id/confguracion"
-        android:onClick="mandarMensaje">
-    </Button>
-
-    <Button
-        android:id="@+id/confguracion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Abrir configuracion"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mensaje"
-        app:layout_constraintBottom_toTopOf="@id/camara"
-        android:onClick="abrirConfiguracion">
-    </Button>
-
-    <Button
-        android:id="@+id/camara"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Abrir camara"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/confguracion"
-        app:layout_constraintBottom_toTopOf="@id/calendario"
-        android:onClick="abrirCamara">
-    </Button>
-
-    <Button
-        android:id="@+id/calendario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Abrir calendario"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/camara"
-        app:layout_constraintBottom_toTopOf="@id/maps"
-        android:onClick="abrirCalendario">
-    </Button>
-
-    <Button
-        android:id="@+id/maps"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Abrir Google maps"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/calendario"
-        android:onClick="abrirMaps">
-    </Button>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

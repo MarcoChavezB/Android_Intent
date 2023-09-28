@@ -3,19 +3,43 @@ package com.example.android_inter;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.net.Uri;
+import android.widget.Toast;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 
 public class MainActivity extends AppCompatActivity {
+    Button iniciarButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        iniciarButton = findViewById(R.id.iniciar);
+
+        iniciarButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, web_page.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
+
+
+
+
+
+
+
+
+
+
+    /*
     public void abrirGithub(View view){
         String url = "https://github.com/MarcoChavezB";
         Uri uri = Uri.parse(url);
@@ -58,6 +82,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
+*/
 
 }
