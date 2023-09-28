@@ -13,6 +13,30 @@
         android:theme="@style/Theme.Android_inter"
         tools:targetApi="31">
         <activity
+            android:name=".maps"
+            android:exported="false" />
+        <activity
+            android:name=".calendario"
+            android:exported="false" />
+        <activity
+            android:name=".camara"
+            android:exported="false" />
+        <activity
+            android:name=".configuracion"
+            android:exported="false" />
+        <activity
+            android:name=".mensajes"
+            android:exported="false" />
+        <activity
+            android:name=".llamada"
+            android:exported="false" />
+        <activity
+            android:name=".correo"
+            android:exported="false" />
+        <activity
+            android:name=".web_page"
+            android:exported="false" />
+        <activity
             android:name=".Activity_menu"
             android:exported="false" />
         <activity
