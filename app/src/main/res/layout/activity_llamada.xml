@@ -151,6 +151,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
                 android:backgroundTint="#404f70"
+                android:textColor="#FFFFFF"
                 />
 
             <Button
@@ -167,6 +168,7 @@
                 style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
                 android:backgroundTint="#1e1f22"
                 android:onClick="siguiente"
+                android:textColor="#FFFFFF"
                 >
 
             </Button>
@@ -185,6 +187,7 @@
                 style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
                 android:backgroundTint="#1e1f22"
                 android:onClick="atras"
+                android:textColor="#FFFFFF"
                 >
 
             </Button>

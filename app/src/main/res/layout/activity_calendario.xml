@@ -49,6 +49,7 @@
             android:layout_height="0dp"
             android:layout_weight="0.4"
             android:background="#2b2d30"
+
             >
 
             <View
@@ -142,16 +143,18 @@
 
             <Button
                 android:id="@+id/calendario"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Abrir caledario"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
                 android:backgroundTint="#404f70"
-             />
+                android:text="Abrir caledario"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.496"
+                android:textColor="#FFFFFF"/>
 
             <Button
                 android:id="@+id/siguiente"
@@ -165,7 +168,8 @@
                 app:layout_constraintHorizontal_bias="0.95"
                 app:layout_constraintVertical_bias="0.9"
                 style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-                android:backgroundTint="#1e1f22">
+                android:backgroundTint="#1e1f22"
+                android:textColor="#FFFFFF">
 
             </Button>
 
@@ -182,6 +186,7 @@
                 app:layout_constraintVertical_bias="0.9"
                 style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
                 android:backgroundTint="#1e1f22"
+                android:textColor="#FFFFFF"
                 >
 
             </Button>
